@@ -9,140 +9,182 @@
   <meta property="og:title" content="Ninh Quoc Bao · Cryptography Researcher">
   <meta property="og:description" content="Post-quantum privacy-preserving protocols: private information retrieval from lattices, homomorphic encryption and verifiable computation.">
   <meta property="og:url" content="https://baoninh2808.github.io/">
-  <meta name="theme-color" content="#f6f9f9" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0f161b" media="(prefers-color-scheme: dark)">
+  <meta property="og:image" content="https://baoninh2808.github.io/assets/img/photo.jpg">
+  <meta name="theme-color" content="#fafbfa" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#11171b" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 <header class="topbar">
-  <div class="topbar-inner">
-    <a class="brand" href="#top">Ninh Quoc Bao</a>
+  <div class="wrap topbar-inner">
+    <span class="site">baoninh2808.github.io</span>
     <nav aria-label="Sections">
-      <a href="#news">News</a>
       <a href="#research">Research</a>
+      <a href="#news">News</a>
       <a href="#publications">Publications</a>
-      <a href="#experience">Experience</a>
+      <a href="#talks">Talks</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
     </nav>
   </div>
 </header>
 
 <main id="top">
 
-  <section class="hero" aria-labelledby="name">
-    <!-- TODO(photo): replace monogram with assets/img/photo.jpg -->
-    <div class="avatar" aria-hidden="true">QB</div>
-    <!-- Photo swap: replace the line above with <img class="avatar" src="assets/img/photo.jpg" alt="Ninh Quoc Bao"> -->
-    <div class="hero-text">
+  <section class="title-block" aria-labelledby="name">
+    <div class="wrap">
+      <picture>
+        <source srcset="assets/img/photo.webp" type="image/webp">
+        <img class="photo" src="assets/img/photo.jpg" alt="Ninh Quoc Bao" width="800" height="800" loading="eager">
+      </picture>
       <h1 id="name">Ninh Quoc Bao</h1>
-      <p class="tagline">Cryptography Researcher · Orochi Network</p>
-      <p class="bio">I am a cryptography researcher at Orochi Network. I work on post-quantum privacy-preserving protocols. My current focus is single-server private information retrieval (PIR) from lattices (LWE): making it concretely efficient, and letting it keep up with a database that changes over time without costly re-preprocessing. I am also interested in fully homomorphic encryption and in verifiable computation, especially zkSNARKs that combine verifiability with privacy. I received my B.Sc. in Information Technology (Honors Program) from the University of Science, VNU-HCM, in 2025.</p>
+      <p class="subtitle">Cryptography Researcher · Orochi Network</p>
       <p class="pills">
-        <a class="pill" href="mailto:ninhquocbao03@gmail.com">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7.5 8 6 8-6"/></svg>Email</a>
-        <a class="pill" href="https://github.com/BaoNinh2808" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>GitHub</a>
-        <a class="pill" href="https://orcid.org/0009-0002-0341-3540" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 8v8M8.5 5.8v.1M12 8v8h1.8a4 4 0 0 0 0-8H12"/></svg>ORCID</a>
-        <a class="pill" href="https://eprint.iacr.org/2026/2082" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 15.5h5"/></svg>ePrint</a>
+        <a class="pill" href="mailto:ninhquocbao03@gmail.com">Email</a>
+        <a class="pill" href="https://github.com/BaoNinh2808" target="_blank" rel="noopener">GitHub</a>
+        <a class="pill" href="https://orcid.org/0009-0002-0341-3540" target="_blank" rel="noopener">ORCID</a>
+        <a class="pill" href="https://eprint.iacr.org/2026/2082" target="_blank" rel="noopener">ePrint</a>
         <!-- TODO(scholar): <a class="pill" href="GOOGLE_SCHOLAR_URL">Google Scholar</a> -->
         <!-- TODO(dblp): <a class="pill" href="DBLP_URL">DBLP</a> -->
         <!-- TODO(cv): <a class="pill" href="assets/cv.pdf">CV</a> -->
       </p>
+
+      <div class="about">
+        <h2>About</h2>
+        <p>I am a cryptography researcher at Orochi Network. I work on post-quantum privacy-preserving protocols. My current focus is single-server private information retrieval (PIR) from lattices (LWE): making it concretely efficient, and letting it keep up with a database that changes over time without costly re-preprocessing. I am also interested in fully homomorphic encryption and in verifiable computation, especially zkSNARKs that combine verifiability with privacy.</p>
+        <p>I received my B.Sc. in Information Technology (Honors Program) from the University of Science, VNU-HCM, in 2025.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="research" aria-labelledby="research-h">
+    <div class="wrap">
+      <h2 class="label" id="research-h"><span class="num">§1</span>Research</h2>
+      <p>At Orochi Network (since 2025) I designed RisePIR, an LWE-based incremental keyword PIR built on a new <i>d</i>-ary Segmented Cuckoo Filter (<a href="https://eprint.iacr.org/2026/2082" target="_blank" rel="noopener">CANS 2026</a>). It powers a private Ethereum <code>eth_getBalance</code> service (<a href="https://risepir.org" target="_blank" rel="noopener">risepir.org</a>): over all 205 million non-zero mainnet accounts, a private query takes 0.69 s and each new block is absorbed in 5.6 ms. The code is <a href="https://github.com/orochi-network/IKPIR" target="_blank" rel="noopener">open source</a>.</p>
+      <p>I also work on zero-knowledge proofs in practice. I moved the zkDatabase provable database from Kimchi to Groth16, cutting proving time by about 50×, and co-authored a <a href="https://docs.orochi.network/research/circle-starks" target="_blank" rel="noopener">technical report on Circle STARKs</a> over the Mersenne-31 field.</p>
+      <p>Before that, as an undergraduate research assistant at the Computer Network Lab, University of Science, VNU-HCM (2024–2025), I built a fully verifiable CP-ABE scheme (<a href="https://doi.org/10.1007/978-981-95-4434-9_31" target="_blank" rel="noopener">CANS 2025</a>) that stays sound against a dishonest key authority or encryptor.</p>
     </div>
   </section>
 
   <section id="news" aria-labelledby="news-h">
-    <h2 id="news-h">News</h2>
-    <ul class="dated">
-      <li><span class="date">Nov 2026</span><span>Presenting RisePIR at <a href="https://uow-ic2.github.io/cans2026/" target="_blank" rel="noopener">CANS 2026</a> in Wollongong, Australia (23–25 Nov).</span></li>
-      <li><span class="date">Sep 2026</span><span>“Incremental Keyword PIR from <i>d</i>-ary Segmented Cuckoo Filters” accepted to CANS 2026. The full version is on <a href="https://eprint.iacr.org/2026/2082" target="_blank" rel="noopener">IACR ePrint</a>.</span></li>
-      <li><span class="date">Aug 2026</span><span>Attended the <a href="https://viasm.edu.vn/en/hdkh/IACR-VIASM-School-2026" target="_blank" rel="noopener">IACR–VIASM Summer School on Cryptography</a> in Hanoi.</span></li>
-      <li><span class="date">Nov 2025</span><span>Presented “Fully Verifiable Ciphertext-Policy Attribute-Based Encryption” at CANS 2025 in Osaka, Japan.</span></li>
-      <li><span class="date">Jul 2025</span><span>Mentor at zk-core-program 2025 in Danang, giving technical sessions on STARK and PLONK.</span></li>
-    </ul>
-  </section>
-
-  <section id="research" aria-labelledby="research-h">
-    <h2 id="research-h">Research</h2>
-    <p class="lede">Selected lines of work.</p>
-    <div class="cards">
-      <article class="card">
-        <h3>RisePIR: incremental keyword PIR</h3>
-        <p>A generic construction of incremental keyword PIR from any updatable index PIR, built on a new <i>d</i>-ary Segmented Cuckoo Filter and instantiated from LWE. Deployed as a private Ethereum <code>eth_getBalance</code> service: over all 205 million non-zero mainnet accounts, a private query takes 0.69 s and each new block is absorbed in 5.6 ms.</p>
-        <p class="links"><a href="https://eprint.iacr.org/2026/2082" target="_blank" rel="noopener">paper</a> · <a href="https://github.com/orochi-network/IKPIR" target="_blank" rel="noopener">code</a> · <a href="https://risepir.org" target="_blank" rel="noopener">demo</a></p>
-      </article>
-      <article class="card">
-        <h3>Fully verifiable attribute-based encryption</h3>
-        <p>A CP-ABE scheme that stays sound against a dishonest key authority or encryptor. Users can verify that their keys match their attributes, and anyone can check that a ciphertext is well formed under its declared policy, using pairing-based techniques.</p>
-        <p class="links"><a href="https://doi.org/10.1007/978-981-95-4434-9_31" target="_blank" rel="noopener">paper</a></p>
-      </article>
-      <article class="card">
-        <h3>Zero-knowledge proofs in practice</h3>
-        <p>At Orochi Network, I moved the zkDatabase provable database from Kimchi to Groth16, cutting proving time by about 50×. I also co-authored a technical report on Circle STARKs over the Mersenne-31 field.</p>
-        <p class="links"><a href="https://docs.orochi.network/research/circle-starks" target="_blank" rel="noopener">report</a></p>
-      </article>
+    <div class="wrap">
+      <h2 class="label" id="news-h"><span class="num">§2</span>News</h2>
+      <ul class="timeline">
+        <li><time datetime="2026-11">Nov 2026</time><span>Presenting RisePIR at <a href="https://uow-ic2.github.io/cans2026/" target="_blank" rel="noopener">CANS 2026</a> in Wollongong, Australia (23–25 Nov).</span></li>
+        <li><time datetime="2026-09">Sep 2026</time><span>“Incremental Keyword PIR from <i>d</i>-ary Segmented Cuckoo Filters” accepted to CANS 2026. The full version is on <a href="https://eprint.iacr.org/2026/2082" target="_blank" rel="noopener">IACR ePrint</a>.</span></li>
+        <li><time datetime="2026-08">Aug 2026</time><span>Attended the <a href="https://viasm.edu.vn/en/hdkh/IACR-VIASM-School-2026" target="_blank" rel="noopener">IACR–VIASM Summer School on Cryptography</a> in Hanoi.</span></li>
+        <li><time datetime="2025-11">Nov 2025</time><span>Presented “Fully Verifiable Ciphertext-Policy Attribute-Based Encryption” at CANS 2025 in Osaka, Japan.</span></li>
+        <li><time datetime="2025-07">Jul 2025</time><span>Mentor at zk-core-program 2025 in Danang, giving technical sessions on STARK and PLONK.</span></li>
+      </ul>
     </div>
   </section>
 
   <section id="publications" aria-labelledby="pubs-h">
-    <h2 id="pubs-h">Publications</h2>
-    <ol class="pubs">
-      <li>
+    <div class="wrap">
+      <h2 class="label" id="pubs-h"><span class="num">§3</span>Publications</h2>
+      <p>My work spans the following themes:</p>
+      <ul class="themes">
+        <li>Lattice-based private information retrieval (PIR)</li>
+        <li>Verifiable attribute-based encryption</li>
+        <li>Zero-knowledge proofs in practice</li>
+        <li>(Earlier) Computer vision</li>
+      </ul>
+
+      <h3 class="year">2026</h3>
+      <article class="pub">
         <p class="pub-title"><a href="https://eprint.iacr.org/2026/2082" target="_blank" rel="noopener">Incremental Keyword Private Information Retrieval from <i>d</i>-ary Segmented Cuckoo Filters</a></p>
-        <p class="pub-meta"><b>Bao Ninh</b></p>
-        <p class="pub-meta">CANS 2026 · to appear</p>
-        <p class="links"><a href="https://eprint.iacr.org/2026/2082" target="_blank" rel="noopener">ePrint</a> · <a href="https://github.com/orochi-network/IKPIR" target="_blank" rel="noopener">code</a> · <a href="https://risepir.org" target="_blank" rel="noopener">demo</a></p>
-      </li>
-      <li>
+        <p class="pub-authors"><b>Bao Ninh</b></p>
+        <p class="pub-meta">
+          <span class="badge">CANS 2026</span>
+          <span class="badge status">to appear</span>
+          <a href="https://eprint.iacr.org/2026/2082" target="_blank" rel="noopener">ePrint</a>
+          <a href="https://github.com/orochi-network/IKPIR" target="_blank" rel="noopener">code</a>
+          <a href="https://risepir.org" target="_blank" rel="noopener">demo</a>
+          <span class="tags">keyword PIR · LWE · cuckoo filters</span>
+        </p>
+      </article>
+
+      <h3 class="year">2025</h3>
+      <article class="pub">
         <p class="pub-title"><a href="https://doi.org/10.1007/978-981-95-4434-9_31" target="_blank" rel="noopener">Fully Verifiable Ciphertext-Policy Attribute-Based Encryption</a></p>
-        <p class="pub-meta"><b>Quoc-Bao Ninh</b>, Cao Quang Phat, Tran Trung Dung</p>
-        <p class="pub-meta">CANS 2025 · LNCS 16351, Springer · short paper</p>
-        <p class="links"><a href="https://doi.org/10.1007/978-981-95-4434-9_31" target="_blank" rel="noopener">doi</a></p>
-      </li>
-      <li>
-        <p class="pub-title"><a href="https://doi.org/10.1145/3628797.3628954" target="_blank" rel="noopener">Multi-Branch Network for Imagery Emotion Prediction</a></p>
-        <p class="pub-meta"><b>Quoc-Bao Ninh</b>, Hai-Chan Nguyen, Triet Huynh, Trung-Nghia Le</p>
-        <p class="pub-meta">SoICT 2023 · ACM · early work in computer vision</p>
-        <p class="links"><a href="https://doi.org/10.1145/3628797.3628954" target="_blank" rel="noopener">doi</a> · <a href="https://arxiv.org/abs/2312.07500" target="_blank" rel="noopener">arXiv</a> · <a href="https://github.com/BaoNinh2808/Multi-Branch-Network-for-Imagery-Emotion-Prediction" target="_blank" rel="noopener">code</a></p>
-      </li>
-    </ol>
-    <h3 class="sub">Technical reports</h3>
-    <ol class="pubs">
-      <li>
+        <p class="pub-authors"><b>Quoc-Bao Ninh</b>, Cao Quang Phat, Tran Trung Dung</p>
+        <p class="pub-meta">
+          <span class="badge">CANS 2025</span>
+          <span class="badge status">short paper</span>
+          <a href="https://doi.org/10.1007/978-981-95-4434-9_31" target="_blank" rel="noopener">DOI</a>
+          <span class="tags">CP-ABE · pairings · verifiability</span>
+        </p>
+      </article>
+      <article class="pub">
         <p class="pub-title"><a href="https://docs.orochi.network/research/circle-starks" target="_blank" rel="noopener">Circle STARKs</a></p>
-        <p class="pub-meta">Nguyen Dinh Thang, <b>Ninh Quoc Bao</b></p>
-        <p class="pub-meta">Orochi Network Research, 2025</p>
-      </li>
-    </ol>
+        <p class="pub-authors">Nguyen Dinh Thang, <b>Ninh Quoc Bao</b></p>
+        <p class="pub-meta">
+          <span class="badge status">Technical report</span>
+          <a href="https://docs.orochi.network/research/circle-starks" target="_blank" rel="noopener">report</a>
+          <span class="tags">STARKs · Mersenne-31</span>
+        </p>
+      </article>
+
+      <h3 class="year">2023</h3>
+      <article class="pub">
+        <p class="pub-title"><a href="https://doi.org/10.1145/3628797.3628954" target="_blank" rel="noopener">Multi-Branch Network for Imagery Emotion Prediction</a></p>
+        <p class="pub-authors"><b>Quoc-Bao Ninh</b>, Hai-Chan Nguyen, Triet Huynh, Trung-Nghia Le</p>
+        <p class="pub-meta">
+          <span class="badge">SoICT 2023</span>
+          <a href="https://doi.org/10.1145/3628797.3628954" target="_blank" rel="noopener">DOI</a>
+          <a href="https://arxiv.org/abs/2312.07500" target="_blank" rel="noopener">arXiv</a>
+          <a href="https://github.com/BaoNinh2808/Multi-Branch-Network-for-Imagery-Emotion-Prediction" target="_blank" rel="noopener">code</a>
+          <span class="tags">computer vision</span>
+        </p>
+      </article>
+    </div>
   </section>
 
-  <section id="experience" aria-labelledby="exp-h">
-    <h2 id="exp-h">Experience &amp; Education</h2>
-    <ul class="timeline">
-      <li><span class="when">2025 – now</span><div><b>Cryptography Researcher</b>, Orochi Network</div></li>
-      <li><span class="when">2024 – 2025</span><div><b>Undergraduate Research Assistant</b>, Computer Network Lab, University of Science, VNU-HCM</div></li>
-      <li><span class="when">2021 – 2025</span><div><b>B.Sc. in Information Technology, Honors Program</b>, University of Science, VNU-HCM<span class="note">Excellent-class degree · GPA 9.23/10 · Thesis graded 10/10</span></div></li>
-    </ul>
+  <section id="talks" aria-labelledby="talks-h">
+    <div class="wrap">
+      <h2 class="label" id="talks-h"><span class="num">§4</span>Talks</h2>
+      <ul class="timeline">
+        <li><time datetime="2026-11">Nov 2026</time><span><a href="https://uow-ic2.github.io/cans2026/" target="_blank" rel="noopener">CANS 2026</a>, Wollongong, Australia: “Incremental Keyword PIR from <i>d</i>-ary Segmented Cuckoo Filters” (upcoming).</span></li>
+        <li><time datetime="2025-11">Nov 2025</time><span>CANS 2025, Osaka, Japan: “Fully Verifiable Ciphertext-Policy Attribute-Based Encryption”.</span></li>
+        <li><time datetime="2025-07">Jul 2025</time><span>zk-core-program 2025, Danang, Vietnam: mentor; technical sessions on STARK and PLONK.</span></li>
+      </ul>
+    </div>
+  </section>
 
-    <h3 class="sub">Honors</h3>
-    <ul class="timeline">
-      <li><span class="when">2023–24</span><div>Dean’s List, Faculty of Information Technology, University of Science</div></li>
-      <li><span class="when">2023–24</span><div>Excellent Student Group in Scientific Research, University of Science, VNU-HCM</div></li>
-      <li><span class="when">2021</span><div>First Prize, National Excellent Student Contest in Physics, Vietnam</div></li>
-    </ul>
+  <section id="education" aria-labelledby="edu-h">
+    <div class="wrap">
+      <h2 class="label" id="edu-h"><span class="num">§5</span>Education &amp; Honors</h2>
+      <dl class="edu">
+        <dt>2021 – 2025</dt>
+        <dd><b>B.Sc. in Information Technology, Honors Program</b>, University of Science, VNU-HCM<span class="note">Excellent-class degree · GPA 9.23/10 · Thesis graded 10/10</span></dd>
+        <dt>2023 – 24</dt>
+        <dd>Dean’s List, Faculty of Information Technology, University of Science</dd>
+        <dt>2023 – 24</dt>
+        <dd>Excellent Student Group in Scientific Research, University of Science, VNU-HCM</dd>
+        <dt>2021</dt>
+        <dd>First Prize, National Excellent Student Contest in Physics, Vietnam</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <h2 class="label" id="contact-h"><span class="num">§6</span>Contact</h2>
+      <p>The best way to reach me is by email at <a href="mailto:ninhquocbao03@gmail.com">ninhquocbao03@gmail.com</a>.</p>
+    </div>
   </section>
 
 </main>
 
 <footer>
-  <p>© 2026 Ninh Quoc Bao · Last updated October 2026</p>
-  <p><a href="mailto:ninhquocbao03@gmail.com">ninhquocbao03@gmail.com</a></p>
+  <div class="wrap">
+    <p>© 2026 Ninh Quoc Bao · Last updated October 2026</p>
+  </div>
 </footer>
 
 </body>
