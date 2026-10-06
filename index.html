@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
   <!-- bump ?v= whenever style.css changes, so browsers don't pair new HTML with cached CSS -->
-  <link rel="stylesheet" href="assets/css/style.css?v=20261006">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261006b">
 </head>
 <body>
 
@@ -25,7 +25,6 @@
   <div class="wrap topbar-inner">
     <span class="site">baoninh2808.github.io</span>
     <nav aria-label="Sections">
-      <a href="#research">Research</a>
       <a href="#news">News</a>
       <a href="#publications">Publications</a>
       <a href="#talks">Talks</a>
@@ -39,21 +38,24 @@
 
   <section class="title-block" aria-labelledby="name">
     <div class="wrap">
-      <picture>
-        <source srcset="assets/img/photo.webp" type="image/webp">
-        <img class="photo" src="assets/img/photo.jpg" alt="Ninh Quoc Bao" width="800" height="800" loading="eager">
-      </picture>
-      <h1 id="name">Ninh Quoc Bao</h1>
-      <p class="subtitle">Cryptography Researcher · Orochi Network</p>
-      <p class="pills">
-        <a class="pill" href="mailto:ninhquocbao03@gmail.com">Email</a>
-        <a class="pill" href="https://github.com/BaoNinh2808" target="_blank" rel="noopener">GitHub</a>
-        <a class="pill" href="https://orcid.org/0009-0002-0341-3540" target="_blank" rel="noopener">ORCID</a>
-        <a class="pill" href="https://eprint.iacr.org/2026/2082" target="_blank" rel="noopener">ePrint</a>
-        <!-- TODO(scholar): <a class="pill" href="GOOGLE_SCHOLAR_URL">Google Scholar</a> -->
-        <!-- TODO(dblp): <a class="pill" href="DBLP_URL">DBLP</a> -->
-        <!-- TODO(cv): <a class="pill" href="assets/cv.pdf">CV</a> -->
-      </p>
+      <div class="hero">
+        <picture>
+          <source srcset="assets/img/photo.webp" type="image/webp">
+          <img class="photo" src="assets/img/photo.jpg" alt="Ninh Quoc Bao" width="800" height="800" loading="eager">
+        </picture>
+        <div class="hero-text">
+          <h1 id="name">Ninh Quoc Bao</h1>
+          <p class="subtitle">Cryptography Researcher · Orochi Network</p>
+          <p class="pills">
+            <a class="pill" href="mailto:ninhquocbao03@gmail.com">Email</a>
+            <a class="pill" href="https://github.com/BaoNinh2808" target="_blank" rel="noopener">GitHub</a>
+            <a class="pill" href="https://orcid.org/0009-0002-0341-3540" target="_blank" rel="noopener">ORCID</a>
+            <!-- TODO(scholar): <a class="pill" href="GOOGLE_SCHOLAR_URL">Google Scholar</a> -->
+            <!-- TODO(dblp): <a class="pill" href="DBLP_URL">DBLP</a> -->
+            <!-- TODO(cv): <a class="pill" href="assets/cv.pdf">CV</a> -->
+          </p>
+        </div>
+      </div>
 
       <div class="about">
         <h2>About</h2>
@@ -63,18 +65,9 @@
     </div>
   </section>
 
-  <section id="research" aria-labelledby="research-h">
-    <div class="wrap">
-      <h2 class="label" id="research-h"><span class="num">§1</span>Research</h2>
-      <p>At Orochi Network (since 2025) I designed RisePIR, an LWE-based incremental keyword PIR built on a new <i>d</i>-ary Segmented Cuckoo Filter (<a href="https://eprint.iacr.org/2026/2082" target="_blank" rel="noopener">CANS 2026</a>). It powers a private Ethereum <code>eth_getBalance</code> service (<a href="https://risepir.org" target="_blank" rel="noopener">risepir.org</a>): over all 205 million non-zero mainnet accounts, a private query takes 0.69 s and each new block is absorbed in 5.6 ms. The code is <a href="https://github.com/orochi-network/IKPIR" target="_blank" rel="noopener">open source</a>.</p>
-      <p>I also work on zero-knowledge proofs in practice. I moved the zkDatabase provable database from Kimchi to Groth16, cutting proving time by about 50×, and co-authored a <a href="https://docs.orochi.network/research/circle-starks" target="_blank" rel="noopener">technical report on Circle STARKs</a> over the Mersenne-31 field.</p>
-      <p>Before that, as an undergraduate research assistant at the Computer Network Lab, University of Science, VNU-HCM (2024–2025), I built a fully verifiable CP-ABE scheme (<a href="https://doi.org/10.1007/978-981-95-4434-9_31" target="_blank" rel="noopener">CANS 2025</a>) that stays sound against a dishonest key authority or encryptor.</p>
-    </div>
-  </section>
-
   <section id="news" aria-labelledby="news-h">
     <div class="wrap">
-      <h2 class="label" id="news-h"><span class="num">§2</span>News</h2>
+      <h2 id="news-h">News</h2>
       <ul class="timeline">
         <li><time datetime="2026-11">Nov 2026</time><span>Presenting RisePIR at <a href="https://uow-ic2.github.io/cans2026/" target="_blank" rel="noopener">CANS 2026</a> in Wollongong, Australia (23–25 Nov).</span></li>
         <li><time datetime="2026-09">Sep 2026</time><span>“Incremental Keyword PIR from <i>d</i>-ary Segmented Cuckoo Filters” accepted to CANS 2026. The full version is on <a href="https://eprint.iacr.org/2026/2082" target="_blank" rel="noopener">IACR ePrint</a>.</span></li>
@@ -87,15 +80,7 @@
 
   <section id="publications" aria-labelledby="pubs-h">
     <div class="wrap">
-      <h2 class="label" id="pubs-h"><span class="num">§3</span>Publications</h2>
-      <p>My work spans the following themes:</p>
-      <ul class="themes">
-        <li>Lattice-based private information retrieval (PIR)</li>
-        <li>Verifiable attribute-based encryption</li>
-        <li>Zero-knowledge proofs in practice</li>
-        <li>(Earlier) Computer vision</li>
-      </ul>
-
+      <h2 id="pubs-h">Publications</h2>
       <h3 class="year">2026</h3>
       <article class="pub">
         <p class="pub-title"><a href="https://eprint.iacr.org/2026/2082" target="_blank" rel="noopener">Incremental Keyword Private Information Retrieval from <i>d</i>-ary Segmented Cuckoo Filters</a></p>
@@ -121,15 +106,6 @@
           <span class="tags">CP-ABE · pairings · verifiability</span>
         </p>
       </article>
-      <article class="pub">
-        <p class="pub-title"><a href="https://docs.orochi.network/research/circle-starks" target="_blank" rel="noopener">Circle STARKs</a></p>
-        <p class="pub-authors">Nguyen Dinh Thang, <b>Ninh Quoc Bao</b></p>
-        <p class="pub-meta">
-          <span class="badge status">Technical report</span>
-          <a href="https://docs.orochi.network/research/circle-starks" target="_blank" rel="noopener">report</a>
-          <span class="tags">STARKs · Mersenne-31</span>
-        </p>
-      </article>
 
       <h3 class="year">2023</h3>
       <article class="pub">
@@ -148,7 +124,7 @@
 
   <section id="talks" aria-labelledby="talks-h">
     <div class="wrap">
-      <h2 class="label" id="talks-h"><span class="num">§4</span>Talks</h2>
+      <h2 id="talks-h">Talks</h2>
       <ul class="timeline">
         <li><time datetime="2026-11">Nov 2026</time><span><a href="https://uow-ic2.github.io/cans2026/" target="_blank" rel="noopener">CANS 2026</a>, Wollongong, Australia: “Incremental Keyword PIR from <i>d</i>-ary Segmented Cuckoo Filters” (upcoming).</span></li>
         <li><time datetime="2025-11">Nov 2025</time><span>CANS 2025, Osaka, Japan: “Fully Verifiable Ciphertext-Policy Attribute-Based Encryption”.</span></li>
@@ -159,7 +135,7 @@
 
   <section id="education" aria-labelledby="edu-h">
     <div class="wrap">
-      <h2 class="label" id="edu-h"><span class="num">§5</span>Education &amp; Honors</h2>
+      <h2 id="edu-h">Education &amp; Honors</h2>
       <dl class="edu">
         <dt>2021 – 2025</dt>
         <dd><b>B.Sc. in Information Technology, Honors Program</b>, University of Science, VNU-HCM<span class="note">Excellent-class degree · GPA 9.23/10 · Thesis graded 10/10</span></dd>
@@ -175,7 +151,7 @@
 
   <section id="contact" aria-labelledby="contact-h">
     <div class="wrap">
-      <h2 class="label" id="contact-h"><span class="num">§6</span>Contact</h2>
+      <h2 id="contact-h">Contact</h2>
       <p>The best way to reach me is by email at <a href="mailto:ninhquocbao03@gmail.com">ninhquocbao03@gmail.com</a>.</p>
     </div>
   </section>
