@@ -116,36 +116,42 @@ section {
 }
 section.title-block {
   border-top: 0;
-  padding: 4rem 0 3rem;
-  text-align: center;
+  padding: 3.5rem 0 3rem;
 }
 
-.label {
-  margin: 0 0 1.1rem;
-  font-family: var(--mono);
-  font-size: .72rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: .14em;
-  color: var(--muted);
-  line-height: 1.4;
+/* Section headings: bold serif with a small blue marker */
+h2 {
+  margin: 0 0 1rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -.005em;
+  line-height: 1.3;
 }
-.label .num { color: var(--green); margin-right: .9em; }
+h2::before {
+  content: "▸";
+  margin-right: .6rem;
+  color: var(--link);
+}
 
-#research p,
 .about p {
   text-align: justify;
   hyphens: auto;
   -webkit-hyphens: auto;
 }
-#research p:last-child { margin-bottom: 0; }
 
-/* Title block */
+/* Title block: photo left, text right */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.hero-text { min-width: 0; }
 .photo {
   display: block;
-  width: 7.5rem;
-  height: 7.5rem;
-  margin: 0 auto 1.4rem;
+  flex: none;
+  width: 8.75rem;
+  height: 8.75rem;
+  margin: 0;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--rule);
@@ -160,16 +166,15 @@ h1 {
   line-height: 1.15;
 }
 .subtitle {
-  margin: .5rem 0 1.4rem;
+  margin: .5rem 0 1rem;
   font-size: 1.05rem;
   color: var(--muted);
 }
 .pills {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: .5rem .6rem;
-  margin: 0 0 3rem;
+  margin: 0;
 }
 .pill {
   display: inline-block;
@@ -184,14 +189,7 @@ h1 {
 }
 .pill:hover { border-color: var(--link); color: var(--link); }
 
-.about { max-width: 38rem; margin: 0 auto; }
-.about h2 {
-  margin: 0 0 1.1rem;
-  font-size: .95rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: .12em;
-}
+.about { margin-top: 2.6rem; }
 .about p:last-child { margin-bottom: 0; }
 
 /* Timeline (News, Talks) */
@@ -212,13 +210,6 @@ h1 {
 }
 
 /* Publications */
-.themes { list-style: none; margin: 0 0 .5rem; }
-.themes li { font-weight: 600; padding: .1rem 0; }
-.themes li::before {
-  content: "▸";
-  color: var(--link);
-  margin-right: .6rem;
-}
 .year {
   margin: 2rem 0 .8rem;
   font-family: var(--mono);
@@ -295,8 +286,15 @@ footer p { margin: 0; }
 @media (max-width: 540px) {
   .wrap { padding: 0 1.1rem; }
   section { padding: 1.7rem 0; }
-  section.title-block { padding: 2.6rem 0 2.2rem; }
-  #research p, .about p { text-align: left; hyphens: manual; -webkit-hyphens: manual; }
+  section.title-block { padding: 2.2rem 0 2.2rem; }
+  .hero { gap: 1.1rem; }
+  .photo { width: 5.5rem; height: 5.5rem; }
+  h1 { font-size: 1.7rem; }
+  .subtitle { margin: .3rem 0 .75rem; font-size: .95rem; line-height: 1.4; }
+  .pills { gap: .4rem .45rem; }
+  .pill { padding: .25rem .65rem; font-size: .7rem; }
+  .about { margin-top: 2rem; }
+  .about p { text-align: left; hyphens: manual; -webkit-hyphens: manual; }
   .timeline li { grid-template-columns: 1fr; gap: 0; padding: .55rem 0; }
   .timeline time { padding-top: 0; }
   .edu { grid-template-columns: 1fr; gap: 0; }
