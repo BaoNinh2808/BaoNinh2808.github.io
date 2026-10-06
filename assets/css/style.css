@@ -401,6 +401,16 @@ footer a:hover { color: var(--blue); }
   .card { padding: 1rem 1.05rem 1.05rem; }
 }
 
+@media (max-width: 520px) {
+  .brand { display: none; }
+  .topbar nav {
+    flex: 1;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .topbar nav a { font-size: 0.8rem; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
